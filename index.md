@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
     <title>NathanKuhn.github.io</title>
 </head>
