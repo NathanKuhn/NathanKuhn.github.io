@@ -20,15 +20,8 @@ body {
     margin: 20px;
     border-radius: 10px;
     
-    box-shadow:
-    /* inset 0 0 6px whitesmoke,
-    inset 2px 0 8px rgb(0, 60, 255),
-    inset -2px 0 8px rgb(255, 0, 221),
-    inset 2px 0 10px rgb(0, 60, 255),
-    inset -2px 0 10px  rgb(255, 0, 221), */
-    0 0 5px #fff,
-    -1px 0 10px rgb(0, 60, 255),
-    1px 0 10px  rgb(255, 0, 221);
+    border: 5px solid;
+    
 }
 
 .heading {
@@ -50,10 +43,11 @@ body {
     font-size: 30px;
 }
 
-h {
+span {
     vertical-align: 0px;
     margin: 0px;
     line-height: 60px;
+    color: rgb(179, 117, 255);
 }
 
 p {
@@ -62,4 +56,16 @@ p {
 }
 a {
     text-decoration: none;
+}
+
+.bigText {
+    color: rgb(179, 117, 255);
+    font-size: 150px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px;
+
+    background: -webkit-linear-gradient(rgb(116, 65, 255), rgb(185, 80, 80));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
