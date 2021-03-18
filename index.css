@@ -1,38 +1,64 @@
 
+@font-face {
+    font-family: 'Azonix';
+    src: url('fonts/Azonix-1VB0.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background: black;
     font-size: 20px;
-    font-family: "Lucida Console", "Courier New", monospace;;
+    font-family: 'Azonix';
+    margin: 0px;
+    color: rgb(179, 117, 255);
 }
 
-div {
+.contentBlock {
     background: rgb(0, 2, 29);
     padding: 5px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     
     box-shadow:
-    inset 0 0 6px whitesmoke,
+    /* inset 0 0 6px whitesmoke,
     inset 2px 0 8px rgb(0, 60, 255),
     inset -2px 0 8px rgb(255, 0, 221),
     inset 2px 0 10px rgb(0, 60, 255),
-    inset -2px 0 10px  rgb(255, 0, 221),
+    inset -2px 0 10px  rgb(255, 0, 221), */
     0 0 5px #fff,
     -1px 0 10px rgb(0, 60, 255),
     1px 0 10px  rgb(255, 0, 221);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    background: darkslateblue;
+}
+
+.headerBlock {
+    width:100%;
+    height: 60px;
+    margin: 5px;
+    background-color: rgb(37, 31, 71);
+    text-align: center;
 }
 
 .descriptorName {
     font-size: 30px;
 }
 
+h {
+    vertical-align: 0px;
+    margin: 0px;
+    line-height: 60px;
+}
+
 p {
-    color: rgb(179, 117, 255);
     margin: 10px;
-    text-shadow: 
-    0 0 2px rgb(245, 245, 245),
-    2px 1px 5px rgb(0, 42, 180),
-    -2px -1px 5px rgb(108, 0, 197);
+    color: rgb(179, 117, 255);
 }
 a {
     text-decoration: none;
