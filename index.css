@@ -21,7 +21,8 @@ body {
     border-radius: 10px;
     
     border: 5px solid;
-    
+    border-image-source: linear-gradient(180deg, rgb(116, 65, 255), rgb(133, 11, 163));
+    border-image-slice: 1;
 }
 
 .heading {
@@ -65,7 +66,7 @@ a {
     vertical-align: middle;
     margin: 20px;
 
-    background: -webkit-linear-gradient(rgb(116, 65, 255), rgb(185, 80, 80));
+    background: -webkit-linear-gradient(rgb(116, 65, 255), rgb(160, 6, 6));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
