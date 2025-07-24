@@ -5,7 +5,7 @@ export default function Sidebar() {
     <aside className="hidden md:flex flex-col w-64 bg-gray-950/95 border-r border-blue-900/60 p-8 items-center justify-start">
       <div className="mb-8 flex flex-col items-center">
         <span className="text-white text-lg font-semibold">Nathan Kuhn</span>
-        <span className="text-gray-400 text-sm">That's me</span>
+        <span className="text-gray-400 text-sm">That&apos;s me</span>
       </div>
       <nav className="w-full">
         <ul className="flex flex-col gap-4">

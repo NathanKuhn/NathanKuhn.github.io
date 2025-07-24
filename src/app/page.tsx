@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex-1 flex flex-col gap-8 p-8 items-stretch w-full">
         <Box title="About">
           <p className="text-gray-400">
-            I put this site together to have easy access to some of my favorite projects I've worked on. I have some experience with Java, OpenGL, Robotics, Rust, Minecraft, PyTorch, Unicycling, and AWS.
+            I put this site together to have easy access to some of my favorite projects I&apos;ve worked on. I have some experience with Java, OpenGL, Robotics, Rust, Minecraft, PyTorch, Unicycling, and AWS.
           </p>
         </Box>
       </div>
