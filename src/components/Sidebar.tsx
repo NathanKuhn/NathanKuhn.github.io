@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -9,8 +9,22 @@ export default function Sidebar() {
       </div>
       <nav className="w-full">
         <ul className="flex flex-col gap-4">
-          <li><Link href="/" className="text-blue-400 hover:text-blue-300 font-medium">Home</Link></li>
-          <li><Link href="/projects" className="text-blue-400 hover:text-blue-300 font-medium">Projects</Link></li>
+          <li>
+            <Link
+              href="/"
+              className="text-blue-400 hover:text-blue-300 font-medium"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/projects"
+              className="text-blue-400 hover:text-blue-300 font-medium"
+            >
+              Projects
+            </Link>
+          </li>
         </ul>
       </nav>
     </aside>
