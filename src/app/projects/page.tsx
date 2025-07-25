@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div className="w-full px-8 pt-10 pb-0 flex flex-col items-center">
       <h1 className="text-white text-6xl font-sans mb-2">My Projects</h1>
-      <div className="flex-1 flex flex-col gap-8 p-8 items-stretch w-full">
+      <div className="flex-1 flex flex-col gap-8 p-8">
         <Box
           title="Galaxy Game"
           content={project1}

@@ -14,18 +14,19 @@ export default function Box({
   titleLink,
 }: BoxProps) {
   const classes = [
+    "w-full",
     "rounded-xl",
     "border",
     "border-blue-900/60",
     "bg-gray-950/90",
     "transition-all",
     "duration-300",
-    "p-0",
+    "text-white",
   ].join(" ");
   return (
     <div className={`${classes} ${className}`}>
       {title && (
-        <div className="w-full text-white text-2xl font-bold py-3 px-4 border-b border-blue-900/60">
+        <div className="text-2xl font-bold py-3 px-4 border-b border-blue-900/60">
           {titleLink ? (
             <a href={titleLink} className="hover:underline">
               {title}
@@ -35,7 +36,7 @@ export default function Box({
           )}
         </div>
       )}
-      <div className="w-full px-4 py-3 pt-2">
+      <div className="px-4 py-3 pt-2">
         <ReactMarkdown>{content}</ReactMarkdown>
       </div>
     </div>
