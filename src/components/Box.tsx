@@ -4,9 +4,15 @@ interface BoxProps {
   content: string;
   className?: string;
   title?: string;
+  titleLink?: string;
 }
 
-export default function Box({ content, className = "", title }: BoxProps) {
+export default function Box({
+  content,
+  className = "",
+  title,
+  titleLink,
+}: BoxProps) {
   const classes = [
     "rounded-xl",
     "border",
@@ -19,9 +25,14 @@ export default function Box({ content, className = "", title }: BoxProps) {
   return (
     <div className={`${classes} ${className}`}>
       {title && (
-        <div className="w-full">
-          <h2 className="text-white text-2xl font-bold py-3 px-4">{title}</h2>
-          <div className="w-full border-t border-blue-900/30" />
+        <div className="w-full text-white text-2xl font-bold py-3 px-4 border-b border-blue-900/60">
+          {titleLink ? (
+            <a href={titleLink} className="hover:underline">
+              {title}
+            </a>
+          ) : (
+            <h2>{title}</h2>
+          )}
         </div>
       )}
       <div className="w-full px-4 py-3 pt-2">
